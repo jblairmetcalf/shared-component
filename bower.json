@@ -11,7 +11,7 @@
     "component"
   ],
   "main": "shared-component.html",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git://github.com/PolymerElements/shared-component.git"
