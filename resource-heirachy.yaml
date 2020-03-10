@@ -1,0 +1,37 @@
+apiVersion: cft.dev/v1alpha1
+kind: CloudFoundation
+metadata:
+  name: my-org
+spec:
+  organization:
+    id: 1111111 #ORGANIZATION_ID
+    folders:
+      - id: "retail"
+        folders:
+        - id: apps
+          folders:
+          - id: prod
+            projects:
+            - id: app1-prod
+          - id: dev
+            projects:
+            - id: app1-dev
+        - id: web
+        - id: shared
+          projects:
+            - id: nethost
+        = id: core
+          displayName: "core services"
+        - id: data
+          displayName: "data & analytics"
+          folders:
+          - id: prod
+            projects:
+            - id: app2-prod
+          - id: dev
+            projects:
+            - id: app2-dev
+        - id: ctrl-serv
+      - id: "risk-mgmt"
+      - id: "financial"
+      - id: "commercial"
